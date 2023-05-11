@@ -1,0 +1,40 @@
+*::after::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: auto 48px;
+  grid-gap: 1%;
+}
+
+.app-container {
+  height: 100vh !important;
+  display: grid;
+  grid-template-columns: 20% 50% 28%;
+  grid-gap: 1%;
+}
+
+.description-sidebar-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.description-sidebar-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.description-sidebar-exit {
+  opacity: 1;
+}
+.description-sidebar-exit-active {
+  transform: translateX(100%);
+  opacity: 0.8;
+  transition: opacity 300ms, transform 300ms;
+}
+

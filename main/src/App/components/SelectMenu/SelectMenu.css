@@ -1,0 +1,54 @@
+.inputs-enter {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+  
+  .inputs-enter-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .inputs-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .inputs-exit-active {
+    transform: scale(0.9);
+    opacity: 0.0;
+    transition: opacity 300ms, transform 300ms;
+  }
+
+.btn-icon {
+    animation: .2s icon ease;
+}
+
+@keyframes icon {
+    from { 
+        transform: scale(1.2);
+    }
+
+    to { 
+        transform: scale(1);
+    }
+}
+
+.message {
+    animation: .2s message ease;
+}
+
+@keyframes message {
+    from { 
+        opacity: 0.6;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1; 
+        transform: scale(1);
+    }
+}
+
+
+  
